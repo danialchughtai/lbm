@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-import Check from './Check';
-import google from "../images/b62b8fc38f32381f37b0.svg";
-import s from "../images/unnamed.png";
-import bn from "../images/unnamed.jpeg";
-import Popup from './Popup';
+
 import { Link } from 'react-router-dom';
 import TableComp from './TableComp';
 
@@ -12,11 +8,7 @@ import TableComp from './TableComp';
 
 const Table = () => {
 
-    const [allCheckboxesChecked, setAllCheckboxesChecked] = useState(false);
 
-    const handleHeaderCheckboxClick = () => {
-        setAllCheckboxesChecked((prevValue) => !prevValue);
-    };
 
     return (
         <div>

@@ -1,6 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Check from './Check';
+import google from "../images/b62b8fc38f32381f37b0.svg";
+import s from "../images/unnamed.png";
+import bn from "../images/unnamed.jpeg";
+import Popup from './Popup';
 
 function TableComp() {
+
+    const [allCheckboxesChecked, setAllCheckboxesChecked] = useState(false);
+
+    const handleHeaderCheckboxClick = () => {
+        setAllCheckboxesChecked((prevValue) => !prevValue);
+    };
     return (
         <table class="w-full text-sm text-left text-gray-500 border border-gray-300">
             <thead class="text-sm text-gray-500 bg-white">
